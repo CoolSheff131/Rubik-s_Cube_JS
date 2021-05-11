@@ -1,0 +1,25 @@
+.title{
+    font-size: large;
+    
+}
+.header{
+    margin: 0 auto;
+    text-align: center;
+}
+.cube{
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  
+}
+
+.side{
+    
+    font-size: 5vw;
+    padding: .5em;
+    background: gold;
+    border: steelblue solid;
+    border-radius: 3%;
+    text-align: center;
+}
