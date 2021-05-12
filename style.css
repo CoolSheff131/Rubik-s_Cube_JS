@@ -8,18 +8,32 @@
 }
 .cube{
     display: grid;
-    
+    width: 10em;
+    height: 10em;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(4, 1fr);
   
 }
 
 .side{
+    padding: 0;
     
-    font-size: 5vw;
-    padding: .5em;
     background: gold;
-    border: steelblue solid;
+    border: black solid;
     border-radius: 3%;
     text-align: center;
+
+    display: grid;
+    
+}
+.color{
+    padding: 0;
+    border: black solid;
+    
+    border-radius: 0px;
+}
+
+.buttons > button{
+    width: 100%;
+    
 }
