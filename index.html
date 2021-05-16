@@ -16,37 +16,35 @@
         <div class="title">КУБИК</div>
     </div>
     <div class="main">
+        <div id="cubes" class="cubesWrapper">
+
+        </div>
         
-        <div id="main_cube" class="cube">
-            <div class="invisible_side"></div>
-            <div class="side" id="cube_side_0"></div>
-
-            <div class="invisible_side"></div>
-            <div class="invisible_side"></div>
-
-            <div class="side" id="cube_side_1"></div>
-            <div class="side" id="cube_side_2"></div>
-            <div class="side" id="cube_side_3"></div>
-            <div class="side" id="cube_side_4"></div>
-
-            <div class="invisible_side"></div>
-
-            <div class="side" id="cube_side_5"></div>
+        <div class="settings" id="settingsID">
+            <p class="label">Количество кубиков</p>
+            <input class="number" type="number" name="CubeNumber" id="cubeNumber" value="1"/>
+            <p class="label">Размер кубиков</p>
+            <input class="number" type="number" name="CubeSize" id="cubeSize" value="3"/>
+            <button class="button" id="SpawnCube">Создать</button>
         </div>
-        <div class="settings">
-            <form action="" name="settings"></form>
-            <p>Размер кубика</p>
-            <input type="number" name="CubeSize" id="cubeSize"/>
-            <button id="SpawnCube">SpawnCube</button>
-        </div>
-        <div className="buttons">
-            <div id="rotateBtns">
-            
+        
+        <div class="solverSettings" id="solutionSettings" hidden="true">
+            <div>
+                <p class="label">Максимальное количество поворотов</p>
+                <input class="number" type="number" name="maxMoves" id="maxMoves" value="1" />            
             </div>
-            <div id="rotateBtnsInverted">
-            
+            <div>
+                <p class="label">Выберите сторону которую нужно собрать</p>
+                <select class="select" id="sideToSolve">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                </select>
             </div>
-
+              <button class="button" id="solve">Собрать</button>
         </div>
 
     </div>
